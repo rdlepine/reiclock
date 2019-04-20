@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography'
 import Flag from 'react-world-flags'
 import Moment from 'react-moment'
 import 'moment-timezone'
+import Logo from './images/logo_rocelec.png'
 
 import './App.css';
 
@@ -63,6 +64,7 @@ class App extends Component {
     
     return (
       <div>
+      <Logo />
       <Typography variant="display1" align="center" component="p" className={classes.title}>
         ROCHESTER ELECTRONICS OFFICE CLOCKS 
       </Typography>
