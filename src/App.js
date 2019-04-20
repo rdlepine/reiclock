@@ -8,7 +8,7 @@ import Typography from '@material-ui/core/Typography'
 import Flag from 'react-world-flags'
 import Moment from 'react-moment'
 import 'moment-timezone'
-import Logo from './images/logo_rocelec.png'
+import logo from './images/logo_rocelec.png'
 
 import './App.css';
 
@@ -31,15 +31,19 @@ const styles = {
     justifyContent: 'space-around',
   },
   title: {
-    paddingTop: 30,
-    width: '100%',
-    align: 'center',
+    paddingLeft: 100,
+    paddingTop: 10,
   },
   flag: {
     height: 70,
     width: 700,
     paddingBottom: 10,
   },
+  header: {
+    display: 'flex',
+    paddingTop: 20,
+    paddingLeft: 20,
+  }
 };
 
 class App extends Component {
@@ -64,10 +68,12 @@ class App extends Component {
     
     return (
       <div>
-      <Logo />
-      <Typography variant="display1" align="center" component="p" className={classes.title}>
-        ROCHESTER ELECTRONICS OFFICE CLOCKS 
-      </Typography>
+        <div className={classes.header}>
+          <img src={logo} />
+          <Typography variant="display1" align="center" component="p" className={classes.title}>
+             OFFICE CLOCKS 
+          </Typography>
+        </div>
       <div  className={classes.content}>
         <Card className={classes.card}>
             <CardActionArea>
