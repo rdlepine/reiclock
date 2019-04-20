@@ -80,7 +80,7 @@ class App extends Component {
               <CardContent>
                 <Flag code="us" height="48" />
                 <Typography gutterBottom variant="h5" component="h2">
-                  BOSTON
+                  NEWBURYPORT
                 </Typography>
                 <Typography  component="p">
                   <Moment interval={10000} format="LLLL">
